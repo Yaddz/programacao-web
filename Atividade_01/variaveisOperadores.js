@@ -1,18 +1,20 @@
-const numA = 4;
-const numB = 8;
+let numA = 4;
+let numB = 8;
 
-function imprimirResultado(operando1, operando2, resultado, operacao) {
+const operacoes = ["Adição", "Subtração", "Multiplicação", "Divisão"]
+
+function imprimirResultado(operacao, operando1, operando2, resultado, ) {
     console.log(`Resultado da ${operacao} entre ${numA} e ${numB}: ${resultado}`);
 }
 
 let resultado = numA + numB;
-imprimirResultado(numA, numB, resultado, "Adição");
+imprimirResultado(operacoes[0], numA, numB, resultado);
 
 resultado = numA - numB;
-imprimirResultado(numA, numB, resultado, "Subtração");
+imprimirResultado(operacoes[1], numA, numB, resultado);
 
 resultado = numA * numB;
-imprimirResultado(numA, numB, resultado, "Multiplicação");
+imprimirResultado(operacoes[2], numA, numB, resultado);
 
 resultado = numA / numB;
-imprimirResultado(numA, numB, resultado, "Divisão");
+imprimirResultado(operacoes[3], numA, numB, resultado);
